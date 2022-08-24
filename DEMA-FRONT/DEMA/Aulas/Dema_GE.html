@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../Dema-inicio.css">
+    <link rel="stylesheet" href="../Loader/loader.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../materias.css">
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="ob.css">
+    <link rel="stylesheet" href="opss.css">
+    <!--icons-->
+
+
+    <title>DEMA - GE</title>
+</head>
+
+<body>
+    <!--<div class="loader-wrapper">
+        <div class="disappear">
+            <span class="loader"><span class="loader-inner"></span></span>
+            </div>-->
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="sidebar">
+            <div class="logo" style="display: grid; padding-left: 20px;">
+                <img style="position: absolute; height: 40px;" src="../bootstrap-icons/gem.svg" alt="icon">
+                <h2>DEMA</h2>
+            </div>
+            <!--Foto de perfil -->
+            <div class="user">
+                <a href=""><img src="../Boneco-Amarelo.png" alt=""></a>
+            </div>
+            <div class="username">
+                <h5>Eduardo Rachor</h5>
+
+            </div>
+            <!-- Row  -->
+            <div class="logout" style="display:grid;">
+                <a href="" style="text-decoration: none;"><img src="../bootstrap-icons/arrow-bar-left.svg"
+                        alt="">logout</a>
+            </div>
+            <input id="search" type="text" placeholder="Não funciono..">
+            <ul>
+                <li><a id="mbtn" onclick="mat()"><img class="icons" src="../bootstrap-icons/book.svg">
+                        Materias</img></a></li>
+                <li><a href="../Dema_inicio.html"><img class="icons" src="../bootstrap-icons/clipboard.svg">
+                        Dashboard</img></a></li>
+                <li><a href=""><img class="icons" src="../bootstrap-icons/person-fill.svg"> Comunidade</img></a></li>
+                <li><a href=""><img class="icons" src="../bootstrap-icons/github.svg">GitHub</img></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Mensagem de boas vindas -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Ops...</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Infelizmente essa parte ainda não foi concluida :(
+                Nossas sinceras desculpas!
+            </div>
+        </div>
+    </div>
+    <div id="contentid">
+
+        <div class="submenu " style="display:;">
+            <div class="submenu2">
+                <ul>
+                    <li>
+                        <div class="vidbar">
+                            <h2>Distancia e Ponto Médio</h2>
+                            <h5>Geometria Espacial</h4>
+                        </div>
+                    </li>
+                    <li><a href="">Segmento de Retas</a></li>
+                    <li><a href="#" onclick="mat2()">Ponto Médio</a></li>
+                    <li><a href="#" onclick="mat2()">Exercicio</a></li>
+                    <li><a href="#popup1" onclick="ops()">Cordeenadas do Ponto Médio</a></li>
+                    <li><a href="#popup1" onclick="ops()">Exercicio</a></li>
+                    <li><a href="#popup1" onclick="ops()">Exercicios</a></li>
+                    <li><a href="#popup1" onclick="ops()">Exercicio</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="video" id="barcontent3" style="display:;">
+            <video controls>
+                <source src="../bds2.mp4" type="video/mp4">
+            </video>
+            <div class="epo">
+                <h1>Transcrição</h1>
+                <span>
+                    O segmento de reta é definido como uma parte da reta, o qual está delimitada por dois pontos.<br>
+
+                    Geralmente, os segmentos de reta são representados dentro de colchetes (Segmento de Reta [AB]) ou
+                    com um traço acima das letras:<br>
+
+                    Lembre-se que as retas são linhas não curvas infinitas e, portanto, são representadas por setas nos
+                    dois lados. Elas são indicadas por letras minúsculas (r, s, t).<br>
+
+                    Já os segmentos de reta são delimitados por dois pontos distantes dentro da reta, os quais são
+                    indicados por letras maiúsculas. Na figura acima, os pontos A e B são chamados de extremidades do
+                    segmento de reta.<br>
+
+                    Por outro lado, as semirretas são ilimitadas num sentido, uma vez que possuem um ponto de origem, no
+                    entanto, não possuem um ponto que delimite seu fim.<br>
+
+                    Sendo assim, as semirretas são uma parte da reta limitadas por um ponto. Por esse motivo, apresentam
+                    uma seta que indica a direção em que ela é infinita.
+                    "Uma reta transversal a duas outras que não se intersetam determina ângulos alternos internos
+                    congruentes."<br>
+                    O ponto médio de um segmento de reta é o ponto que separa o segmento em duas partes com medidas
+                    iguais.
+                </span>
+            </div>
+        </div>
+        <div class="video" id="barcontent" style="display:none;">
+            <video controls>
+                <source src="../bds2.mp4" type="video/mp4">
+            </video>
+            <div class="epo">
+                <h1>Transcrição</h1>
+                <span>
+                    O ponto médio de um segmento de reta é o ponto que separa o segmento em duas partes com medidas
+                    iguais.
+
+                    Geralmente, os segmentos de reta são representados dentro de colchetes (Segmento de Reta [AB]) ou
+                    com um traço acima das letras:<br>
+
+                    Lembre-se que as retas são linhas não curvas infinitas e, portanto, são representadas por setas nos
+                    dois lados. Elas são indicadas por letras minúsculas (r, s, t).<br>
+
+                    Já os segmentos de reta são delimitados por dois pontos distantes dentro da reta, os quais são
+                    indicados por letras maiúsculas. Na figura acima, os pontos A e B são chamados de extremidades do
+                    segmento de reta.<br>
+
+                    Por outro lado, as semirretas são ilimitadas num sentido, uma vez que possuem um ponto de origem, no
+                    entanto, não possuem um ponto que delimite seu fim.<br>
+
+                    Sendo assim, as semirretas são uma parte da reta limitadas por um ponto. Por esse motivo, apresentam
+                    uma seta que indica a direção em que ela é infinita.
+                    "Uma reta transversal a duas outras que não se intersetam determina ângulos alternos internos
+                    congruentes."<br>
+
+                </span>
+            </div>
+        </div>
+        <div class="video" id="barcontent2" style="display:none;">
+            <div class="exerci">
+                <h1>Exercicios</h1>
+                <span>
+                    Baseado no video anterior, resolva as seguintes perguntas.
+                </span>
+                <h3>1. Quantos segmentos de reta possui um cubo?</h1>
+                    <a onclick="apr()">resposta</a>
+                    <span id='resp1' style="display: none; border: 1px solid;">
+                        12
+                    </span>
+                    <h3>2. Quantos segmentos de reta possui o tetraedro e o triângulo?</h3>
+                    <a onclick="apr2()">resposta</a>
+                    <span id='resp2' style="display: none; border: 1px solid;">6 e 3
+                    </span>
+                    <h3>3. Qual o ponto medio de uma figura com valor x?</h3>
+                    <a onclick="apr3()">resposta</a>
+                    <span id='resp3' style="display: none; border: 1px solid;">X/2</span>
+                    <h3>4. Um prisma hexagonal possui 8 faces e 12 vértices. Qual é o número de arestas?</h3>
+                    <a onclick="apr3()">resposta</a>
+                    <span id='resp3' style="display: none; border: 1px solid;">O prisma possui 18 arestas./</span>
+                    <h3>5. (Enem 2021) Num recipiente com a forma de paralelepípedo reto-retângulo, colocou-se água até
+                        a altura de 8 cm e um objeto, que ficou flutuando na superfície da água. Para retirar o objeto
+                        de dentro do recipiente, a altura da coluna de água deve ser de, pelo menos, 15 cm. Para a
+                        coluna de água chegar até essa altura, é necessário colocar dentro do recipiente bolinhas de
+                        volume igual a 6 cm3 cada, que ficarão totalmente submersas.</h3>
+                    <a onclick="apr3()">resposta</a>
+                    <span id='resp3' style="display: none; border: 1px solid;">X/2</span>
+            </div>
+        </div>
+
+    </div>
+    <!--Materias on click-->
+    <div id="maid" class="materias_1" style="display:none;">
+        <div id="mlist">
+            <ul>
+                <li>
+                    <span>Biblioteca da Matematica</span>
+                </li>
+            </ul>
+            <li class="all">
+                <div class="b1f">
+
+                    <span>Matemática Básica</span>
+
+                    <ul>
+                        <li><a href="Aulas/Dema_OB.html">Operações Básicas</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Numeros Decimais</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Símbolos Matemáticos</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Conjuntos Numéricos</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Potenciação</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Radiciação</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Fração Geratriz</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Produtos Notaveis</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Fatoração</a></li>
+                        <li><a href="Aulas/Dema_OB.html">MMC e MDC</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Escala</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Regra de três</a></li>
+                    </ul>
+                </div>
+                <div class="gp1">
+
+                    <span>Geometria Plana</span>
+
+                    <ul>
+                        <li><a href="Aulas/Dema_GP.html">Axiomas</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Ãngulos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Teorema de Tales</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Triangulos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Quadriláteros Notáveis</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Polígnos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Semelhança de Polígnos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Circuferência</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Polignos 2</a></li>
+                    </ul>
+                </div>
+                <div class="ge1">
+
+                    <span>Geometria espacial</span>
+
+                    <ul>
+                        <li><a href="Aulas/Dema_GE.html">Distancia e Ponto Medio</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Equação da Reta</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Alinhamentos</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Posições relativas entre 2 retas</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Geometria Espacial</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Circunferencia</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Conicas</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Posição Relativa Circuferência</a></li>
+                    </ul>
+                </div>
+                <div class="ga1">
+
+                    <span>Geometria analítica</span>
+
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Distância entre 2 pontos</a></li>
+                        <li><a href="Dema_workinprogress.html">Ponto Médio de um Segmento</a></li>
+                        <li><a href="Dema_workinprogress.html">Equação da reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Condição de alinhamento 3 pontos</a></li>
+                        <li><a href="Dema_workinprogress.html">Metodos obtenção da equação de uma reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Posições reltivas entre 2 retas</a></li>
+                        <li><a href="Dema_workinprogress.html">Distância entre ponto e reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Distância entre 2 retas paralelas</a></li>
+                        <li><a href="Dema_workinprogress.html">Baricentro e área de um triângulo mediante coordenadas do
+                                vértices</a></li>
+                        <li><a href="Dema_workinprogress.html">Circunferencia</a></li>
+
+                    </ul>
+                </div>
+                <div class="ga1">
+
+                    <span>Trigonometria</span>
+
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Relações no Triângulo Retãngulo</a></li>
+                        <li><a href="Dema_workinprogress.html">Teoremas da Geometria Espacial</a></li>
+                        <li><a href="Dema_workinprogress.html">Posições Relativas</a></li>
+                        <li><a href="Dema_workinprogress.html">Poliedros</a></li>
+                        <li><a href="Dema_workinprogress.html">Prismas</a></li>
+                        <li><a href="Dema_workinprogress.html">Paeleleípedo</a></li>
+                        <li><a href="Dema_workinprogress.html">Cubos</a></li>
+                        <li><a href="Dema_workinprogress.html">Cones</a></li>
+                        <li><a href="Dema_workinprogress.html">Piramides</a></li>
+                        <li><a href="Dema_workinprogress.html">Cilindro</a></li>
+                        <li><a href="Dema_workinprogress.html">Troncos</a></li>
+                        <li><a href="Dema_workinprogress.html">Semelhança de Sólidos</a></li>
+                        <li><a href="Dema_workinprogress.html">Esfera</a></li>
+                        <li><a href="Dema_workinprogress.html">Projeção Ortogonal</a></li>
+                    </ul>
+                </div>
+                <div class="fun1">
+
+                    <span>Funções e Conjuntos</span>
+
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Teoria dos conjuntos</a></li>
+                        <li><a href="Dema_workinprogress.html">Relação de elementos e conjuntos</a></li>
+                        <li><a href="Dema_workinprogress.html">Produto Cartesiano</a></li>
+                        <li><a href="Dema_workinprogress.html">Definição de Função</a></li>
+                        <li><a href="Dema_workinprogress.html">DCI</a></li>
+                        <li><a href="Dema_workinprogress.html">Função Composta</a></li>
+                        <li><a href="Dema_workinprogress.html">Função Inversa</a></li>
+                        <li><a href="Dema_workinprogress.html">Função Sobrejetora</a></li>
+                        <li><a href="Dema_workinprogress.html">Função Injetora</a></li>
+                        <li><a href="Dema_workinprogress.html">Função Bijetora</a></li>
+                        <li><a href="Dema_workinprogress.html">Função de 1º e 2º Grau</a></li>
+                        <li><a href="Dema_workinprogress.html">Funções avançadas</a></li>
+                    </ul>
+                </div>
+                <div class="gp1">
+
+                    <span>Analise Combinatoria</span>
+
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Fatorial</a></li>
+                        <li><a href="Dema_workinprogress.html">Numero Binomial</a></li>
+                        <li><a href="Dema_workinprogress.html">Triangulo de Pascal</a></li>
+                        <li><a href="Dema_workinprogress.html">Binomio de Newton</a></li>
+                        <li><a href="Dema_workinprogress.html">Principio da contagem</a></li>
+                        <li><a href="Dema_workinprogress.html">Permutação</a></li>
+                        <li><a href="Dema_workinprogress.html">Arranjo</a></li>
+                        <li><a href="Dema_workinprogress.html">Combinação</a></li>
+                        <li><a href="Dema_workinprogress.html">Espaço amostral e evento</a></li>
+                        <li><a href="Dema_workinprogress.html">Definição de Probabilidade</a></li>
+                        <li><a href="Dema_workinprogress.html">Eventos</a></li>
+                        <li><a href="Dema_workinprogress.html">Eventos Independentes</a></li>
+                    </ul>
+                </div>
+            </li>
+
+
+
+        </div>
+        </li>
+
+
+
+    </div>
+    </div>
+
+
+
+</body>
+<!-- Script de Load -->
+<script>
+    var loader = document.querySelector(".loader-wrapper"); window.addEventListener("load", vanish); function vanish() { loader.classList.add("disappear"); }
+</script>
+<script src="../test.js"></script>
+<script>
+    function mat2() {
+        var x = document.getElementById("barcontent");
+        var y = document.getElementById("barcontent2");
+        var z = document.getElementById("barcontent3");
+        z.style.display = "none"
+        if (x.style.display === "none") {
+            x.style.display = "";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "";
+        }
+    }
+    function ops() {
+        var x = document.getElementById("barcontent");
+        var y = document.getElementById("barcontent2");
+        var z = document.getElementById("barcontent3");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
+    }
+
+</script>

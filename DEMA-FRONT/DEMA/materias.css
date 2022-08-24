@@ -1,0 +1,40 @@
+.materias_1{
+    font-family: 'Bahnschrift';
+    position: absolute;
+    width: 1500px;
+    left: 200px;
+
+}
+#mlist{
+    margin-top: 40px;
+    border: none;
+    margin-right: none;
+    
+
+}
+.materias_1 span{
+    font-size: 30px;
+    border-bottom: 1px solid rgba(209, 208, 208, 0.877);
+}
+.materias_1 li{
+    margin-bottom: 10px ;
+    
+}
+.materias_1 ul{
+    padding-left: 0px;
+}
+.all{
+    display: inline-flex;
+    position: absolute;
+    left: 100px;
+    
+}
+.materias_1 div{
+    padding: 0px 1em;
+    justify-content: space-between;
+}
+.materias_1 a{
+    padding-bottom: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}

@@ -1,0 +1,305 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    width: unset;
+    height: unset;
+}
+.menu {
+    display: flex;
+    position: relative;
+    font-family: 'Bahnschrift';
+    z-index: 5;
+}
+
+.menu .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    padding: 30px 0;
+    background: #565da0;
+
+}
+
+.menu .sidebar h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Bahnschrift';
+    font-size: 35px;
+
+
+}
+
+.menu .sidebar ul {
+    padding-left: 0px;
+}
+
+.menu .sidebar ul li {
+    padding: 30px;
+}
+
+.menu .sidebar ul li a {
+    color: #bdb8d7;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .sidebar ul li a .icons {
+    width: 25px;
+}
+
+.menu .sidebar ul li:hover {
+    background: #404781
+}
+
+.user img {
+    width: 100px;
+    background-color: white;
+    border-radius: 49px;
+    border: 3px solid #404781
+}
+
+.logout {
+    margin-bottom: 50px;
+}
+#search{
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.wb {
+    color: #404781;
+    position: absolute;
+    width: 450px;
+    left: 15em;
+    top: 4em;
+    font-family: 'Bahnschrift';
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    font-family: 'Bahnschrift';
+    z-index: 1;
+}
+
+.menu .sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    padding: 30px 0;
+    background: #565da0;
+
+}
+
+.menu .sidebar h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 100px;
+    font-family: 'Bahnschrift';
+    font-size: 35px;
+
+
+}
+
+.menu .sidebar ul {
+    padding-left: 0px;
+}
+
+.menu .sidebar ul li {
+    padding: 30px;
+}
+
+.menu .sidebar ul li a {
+    color: #bdb8d7;
+    display: block;
+    text-decoration: none;
+}
+
+.menu .sidebar ul li a .icons {
+    width: 25px;
+}
+
+.menu .sidebar ul li:hover {
+    background: #404781
+}
+
+.user img {
+    width: 100px;
+    background-color: white;
+    border-radius: 49px;
+    border: 3px solid #404781
+}
+
+.logout {
+    margin-bottom: 50px;
+}
+
+.wb {
+    color: #404781;
+    position: absolute;
+    width: 450px;
+    left: 15em;
+    top: 4em;
+    font-family: 'Bahnschrift';
+}
+
+.dashboard {}
+
+.dash1 {
+    position: relative;
+    display: flex;
+    left: 50em;
+    top: 15em;
+    border-radius: 30px;
+    font-family: 'Bahnschrift';
+    width: 400px;
+
+}
+
+.dash1 ul li {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    padding-left: 75px;
+}
+
+.dash1 ul li h1 {
+    padding-right: 10px;
+}
+
+.dash1 ul li h6 {
+    padding-top: 10px;
+}
+
+.materias {
+    width: 400px;
+    left: 17em;
+    position: relative;
+    top: 1em;
+    /*border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
+}
+
+progress {
+    border-radius: 7px;
+    width: 80%;
+    height: 22px;
+}
+
+.materias h4 {
+    position: absolute;
+    display: contents;
+}
+
+progress::-webkit-progress-bar {
+    background-color: rgb(255, 255, 255);
+}
+
+progress::-webkit-progress-value {
+    background-color: rgb(108, 108, 211);
+}
+
+.ranking {
+    width: 400px;
+    display: grid;
+
+}
+
+.escola {
+    left: 85em;
+    top: 15em;
+    position: absolute;
+
+}
+
+.ranking li {
+    justify-content: space-between;
+    display: flex;
+    width: 400px;
+    align-items: center;
+
+}
+
+.ranking li:hover {
+    background-color: #c6c8da;
+    border-radius: 10px;
+}
+
+.ranking a {
+    color: black;
+    font-size: large;
+    font-family: 'Bahnschrift';
+
+}
+
+.ranking h2 {
+    width: 470px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(219, 219, 230, 0.993);
+}
+
+.ranking li a:hover {
+    color: rgb(99, 94, 94);
+    font-size: 20px;
+    font-family: 'Bahnschrift';
+}
+
+.revisao {
+    position: relative;
+    font-family: 'Bahnschrift';
+    width: 350px;
+    left: 16em;
+    top: 10em;
+    align-items: center;
+
+}
+
+.revisao li span a {
+    color: black;
+    font-size: 20px;
+    margin: 30px;
+
+
+}
+
+.revisao span {
+    margin-top: 20px;
+
+
+}
+
+.revisao h5 {
+    border-bottom: 1px solid #c7c7ccbe;;
+    display: inline-flex;
+}
+
+.revisao li a:hover {
+    font-size: x-large;
+}
+
+.revisao li span:hover {
+    background-color: #c7c7ccbe;
+    border-radius: 40px;
+
+
+}
+.provas{
+    position: relative;
+    left: 53em;
+    bottom: 75px;
+    width: 250px;
+
+}
+.provas h2{
+    position: relative;
+    left: 15px;
+    border-bottom: 1px solid #c7c7ccbe;;
+    width: 250px;
+    padding-bottom: 10px;
+}

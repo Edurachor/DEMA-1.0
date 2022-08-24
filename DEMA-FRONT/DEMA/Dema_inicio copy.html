@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Dema-inicio.css">
+    <link rel="stylesheet" href="Loader/loader.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="materias.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <!--icons-->
+
+
+    <title>DEMA - INICIO</title>
+</head>
+
+<body>
+    <!--<div class="loader-wrapper">
+        <div class="disappear">
+            <span class="loader"><span class="loader-inner"></span></span>
+            </div>-->
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="sidebar">
+            <div class="logo" style="display: grid; padding-left: 20px;">
+                <img style="position: absolute; height: 40px;" src="bootstrap-icons/gem.svg" alt="icon">
+                <h2>DEMA</h2>
+            </div>
+            <!--Foto de perfil -->
+            <div class="user">
+                <a href=""><img src="Boneco-Amarelo.png" alt=""></a>
+            </div>
+            <div class="username">
+                <h5>Eduardo Rachor</h5>
+
+            </div>
+            <!-- Row  -->
+            <div class="logout" style="display:grid;">
+                <a href="" style="text-decoration: none;"><img src="bootstrap-icons/arrow-bar-left.svg"
+                        alt="">logout</a>
+            </div>
+            <input id ="search"type="text" placeholder="Não funciono..">
+            <ul>
+                <li><a id="mbtn" onclick="mat()"><img class="icons" src="bootstrap-icons/book.svg"> Materias</img></a></li>
+                <li><a href=""><img class="icons" src="bootstrap-icons/clipboard.svg"> Dashboard</img></a></li>
+                <li><a href=""><img class="icons" src="bootstrap-icons/person-fill.svg"> Comunidade</img></a></li>
+                <li><a href=""><img class="icons" src="bootstrap-icons/github.svg">GitHub</img></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Mensagem de boas vindas -->
+    <div class="content" id="contentid" style="display:;">
+        <div class="wb">
+            <h2>Bem vindo de volta, Eduardo</h2>
+            <h5>Aqui é sua dashboard.</h4>
+        </div>
+        <!-- Performace -->
+        <div class="dashboard">
+            <div class="dash1">
+                <ul>
+                    <h1>Sua performace</h1>
+                    <li>
+                        <h1>29</h1>
+                        <h6>Aulas completadas</p>
+                    </li>
+                    <li>
+                        <h1>100</h1>
+                        <h6>Exercicios Realizados</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- Relação de erros
+            ps: Mudar para que fique na div com a respectiva da pagina.
+            -->
+            <div class="materias">
+                <h2>Relação de erros</h2>
+                <div>
+                    <div>
+                        <h5>Geometria</h4>
+                    </div>
+                    <progress value="55" max="100"></progress>
+                    <h4>55</h4>
+                </div>
+                <div>
+                    <div>
+                        <h5>Trigonometria</h4>
+                    </div>
+                    <progress value="25" max="100"></progress>
+                    <h4>25</h4>
+                </div>
+                <div>
+                    <div>
+                        <h5>Funções do 2º Grau</h4>
+                    </div>
+                    <progress value="20" max="100"></progress>
+                    <h4>20</h4>
+                </div>
+            </div>
+            <!-- Ranking -->
+            <div class="ranking">
+                <div class="escola">
+                    <h2>Ranking Escolar</h2>
+                    <ul>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px;"><a href=""
+                                style="text-decoration: none;">Leonardo</a>
+                            <h4>#1</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Eder</a>
+                            <h4>#2</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Henrique</a>
+                            <h4>#3</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px;"><a href=""
+                                style="text-decoration: none;">Allan</a>
+                            <h4>#4</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Eduardo</a>
+                            <h4>#5</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Eduardo</a>
+                            <h4>#6</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px;"><a href=""
+                                style="text-decoration: none;">Felipe</a>
+                            <h4>#7</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Emanuel</a>
+                            <h4>#8</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Pietro</a>
+                            <h4>#9</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px;"><a href=""
+                                style="text-decoration: none;">Larissa</a>
+                            <h4>#10</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Gabriela</a>
+                            <h4>#11</h4>
+                        </li>
+                        <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; "><a href=""
+                                style="text-decoration: none;">Shirley</a>
+                            <h4>#12</h4>
+                        </li>
+                    </ul>
+                </div>
+                <!--Projeto ranking 2 que nunca foi para frente -->
+                <!--<div class="global">
+                        <h2>Ranking Estadual</h2>
+                        <ul>
+                            <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; border: 4px black;"><a href="" style="text-decoration: none;">Usuario</a><h4>#1</h4></li>
+                            <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; border: 4px black;"><a href="" style="text-decoration: none;">Usuario</a><h4>#1</h4></li>
+                            <li><img src="Boneco-Amarelo.png" alt="" style="border-radius: 40px; width: 40px; border: 4px black;"><a href="" style="text-decoration: none;">Usuario</a><h4>#1</h4></li>
+                        </ul>
+                </div>-->
+
+            </div>
+            <!-- Revisão -->
+            <div class="revisao">
+                <h2>Revisão</h1>
+                    <h5>Você possui 32 exericios para revisar</h5>
+                    <li style="display:grid;">
+                        <span><a href="" style="text-decoration:none;">Geometria</a><a href=""
+                                style="text-decoration:none ;">12</a></span>
+                        <span><a href="" style="text-decoration:none;">Trigonometria</a><a href=""
+                                style="text-decoration:none ;">10</a></span>
+                        <span><a href="" style="text-decoration:none;">Função do 2ºGrau</a><a href=""
+                                style="text-decoration:none ;">10</a></span>
+                    </li>
+
+            </div>
+            <!-- Provas -->
+            <div class="provas">
+                <h2>Provas</h2>
+                <ul>
+                    <li><span>Os simulados aparecerão aqui</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <!--Materias on click-->
+    <div id="maid"class="materias_1" style="display:none;">
+        <div id="mlist">
+            <ul>
+                <li>
+                    <span>Biblioteca da Matematica</span>
+                </li>
+            </ul>
+            <li class="all">
+                <div class="b1f">
+                    
+                        <span>Matemática Básica</span>
+                    
+                    <ul>
+                        <li><a href="Aulas/Dema_OB.html">Operações Básicas</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Numeros Decimais</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Símbolos Matemáticos</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Conjuntos Numéricos</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Potenciação</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Radiciação</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Fração Geratriz</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Produtos Notaveis</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Fatoração</a></li>
+                        <li><a href="Aulas/Dema_OB.html">MMC e MDC</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Escala</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Regra de três</a></li>
+                    </ul>
+                </div>
+                <div class="gp1">
+                    
+                        <span>Geometria Plana</span>
+                    
+                    <ul>
+                        <li><a href="Aulas/Dema_GP.html">Axiomas</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Ãngulos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Teorema de Tales</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Triangulos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Quadriláteros Notáveis</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Polígnos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Semelhança de Polígnos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Circuferência</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Polignos 2</a></li>
+                    </ul>
+                </div>
+                <div class="ge1">
+                    
+                        <span>Geometria espacial</span>
+                    
+                    <ul>
+                        <li><a href="Aulas/Dema_GE.html">Distancia e Ponto Medio</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Equação da Reta</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Alinhamentos</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Posições relativas entre 2 retas</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Geometria Espacial</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Circunferencia</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Conicas</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Posição Relativa Circuferência</a></li>
+                    </ul>
+                </div>
+                <div class="ga1">
+                    
+                        <span>Geometria analítica</span>
+                    
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Distância entre 2 pontos</a></li>
+                        <li><a href="Dema_workinprogress.html">Ponto Médio de um Segmento</a></li>
+                        <li><a href="Dema_workinprogress.html">Equação da reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Condição de alinhamento 3 pontos</a></li>
+                        <li><a href="Dema_workinprogress.html">Metodos obtenção da equação de uma reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Posições reltivas entre 2 retas</a></li>
+                        <li><a href="Dema_workinprogress.html">Distância entre ponto e reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Distância entre 2 retas paralelas</a></li>
+                        <li><a href="Dema_workinprogress.html">Baricentro e área de um triângulo mediante coordenadas do vértices</a></li>
+                        <li><a href="Dema_workinprogress.html">Circunferencia</a></li>
+
+                    </ul>
+                </div>
+                <div class="ga1">
+                    
+                        <span>Trigonometria</span>
+                    
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Relações no Triângulo Retãngulo</a></li>
+                        <li><a href="Dema_workinprogress.html">Teoremas da Geometria Espacial</a></li>
+                        <li><a href="Dema_workinprogress.html">Posições Relativas</a></li>
+                        <li><a href="Dema_workinprogress.html">Poliedros</a></li>
+                        <li><a href="Dema_workinprogress.html">Prismas</a></li>
+                        <li><a href="Dema_workinprogress.html">Paeleleípedo</a></li>
+                        <li><a href="Dema_workinprogress.html">Cubos</a></li>
+                        <li><a href="Dema_workinprogress.html">Cones</a></li>
+                        <li><a href="Dema_workinprogress.html">Piramides</a></li>
+                        <li><a href="Dema_workinprogress.html">Cilindro</a></li>
+                        <li><a href="Dema_workinprogress.html">Troncos</a></li>
+                        <li><a href="Dema_workinprogress.html">Semelhança de Sólidos</a></li>
+                        <li><a href="Dema_workinprogress.html">Esfera</a></li>
+                        <li><a href="Dema_workinprogress.html">Projeção Ortogonal</a></li>
+                    </ul>
+                </div>
+                <div class="fun1">
+                
+                    <span>Funções e Conjuntos</span>
+                
+                <ul>
+                    <li><a href="Dema_workinprogress.html">Teoria dos conjuntos</a></li>
+                    <li><a href="Dema_workinprogress.html">Relação de elementos e conjuntos</a></li>
+                    <li><a href="Dema_workinprogress.html">Produto Cartesiano</a></li>
+                    <li><a href="Dema_workinprogress.html">Definição de Função</a></li>
+                    <li><a href="Dema_workinprogress.html">DCI</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Composta</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Inversa</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Sobrejetora</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Injetora</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Bijetora</a></li>
+                    <li><a href="Dema_workinprogress.html">Função de 1º e 2º Grau</a></li>
+                    <li><a href="Dema_workinprogress.html">Funções avançadas</a></li>
+                </ul>
+            </div>
+            <div class="gp1">
+                
+                    <span>Analise Combinatoria</span>
+                
+                <ul>
+                    <li><a href="Dema_workinprogress.html">Fatorial</a></li>
+                    <li><a href="Dema_workinprogress.html">Numero Binomial</a></li>
+                    <li><a href="Dema_workinprogress.html">Triangulo de Pascal</a></li>
+                    <li><a href="Dema_workinprogress.html">Binomio de Newton</a></li>
+                    <li><a href="Dema_workinprogress.html">Principio da contagem</a></li>
+                    <li><a href="Dema_workinprogress.html">Permutação</a></li>
+                    <li><a href="Dema_workinprogress.html">Arranjo</a></li>
+                    <li><a href="Dema_workinprogress.html">Combinação</a></li>
+                    <li><a href="Dema_workinprogress.html">Espaço amostral e evento</a></li>
+                    <li><a href="Dema_workinprogress.html">Definição de Probabilidade</a></li>
+                    <li><a href="Dema_workinprogress.html">Eventos</a></li>
+                    <li><a href="Dema_workinprogress.html">Eventos Independentes</a></li>
+                </ul>
+            </div>
+            </li>
+            
+
+
+        </div>
+        </li>
+
+
+
+    </div>
+    </div>
+
+
+
+</body>
+<!-- Script de Load -->
+<script>
+    var loader = document.querySelector(".loader-wrapper"); window.addEventListener("load", vanish); function vanish() { loader.classList.add("disappear"); }
+</script>
+<script src="test.js"></script>

@@ -1,0 +1,191 @@
+.imagem-inicial, .login {
+    animation: transitionIn 1s;
+}
+
+@keyframes transitionIn{
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+body{
+    font-family: Bahnschrift;
+    background-color: #5c6296;
+    margin: 0;
+    transition: 1s;
+}
+
+a{
+    text-decoration: none;
+    color: #404781;
+}
+
+.titulo-DEMA{
+    text-align: center;
+    height: 100px;
+    font-size: 100px;
+    color: #60bc6a;
+    margin: auto;
+}
+
+h2{
+    padding-left: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #404781;
+    margin: auto;
+}
+
+.entrada{
+    position: absolute;
+    display: inline-block;
+    background-color: white;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+   
+}
+
+.lado-esquerdo{
+    width:50%;
+    display: inline-block;
+}
+
+label{
+    display: flex;
+    padding-top: 10px;
+}
+
+.login{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    right: 25%;
+    display: inline-block;
+}
+.dados{
+    border: none;
+    margin: auto;
+    padding: auto;
+}
+
+.input-login{
+    font-size: 20px;
+    border: none;
+    background: #eaeffe;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.logar-conta{
+    display: inline-block;
+    text-transform: uppercase;
+    width: 50%;
+    left: 25%;
+    height: 30px;
+    background: #00a1e1;
+    color: white;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.3s, transform 0.5s;
+}
+
+.logar-conta:hover{
+    background: #0086bb;
+    cursor: pointer; ;
+
+}
+
+.logar-conta:active{
+    background-color: orange;
+    transition:transform 0.2s;
+    transform: scale(0.9);
+
+}
+
+.botao-recap{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.g-recaptcha{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-inicial{
+    width: 50%;
+    position: fixed;
+    right: 50%;
+    display: flex;
+}
+
+@media screen and (max-width: 820px){
+    .imagem-inicial{
+        display:inline-block;
+        position: fixed;
+        left: 0%;
+        top:-5%;
+        width: 100%;
+        height: 50%;
+    }
+    .lado-esquerdo{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 50%;
+        bottom: 60%;
+    }
+    .entrada{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 40%;
+    }
+    .input-login {
+        width: 95%;
+    }
+    .login{
+        display: block;
+        position: fixed;
+        width: 50%;
+        height: 50%;
+        top: 42%;
+    }
+    .titulo-DEMA{
+        text-align: center;
+        height: auto;
+        font-size: 50px;
+    }
+    h2{
+        font-size: 13px ;
+        height: auto;
+        text-align: center;
+        padding: 0px;
+    }
+    .dados{
+        border: none;
+        margin: auto;
+        padding: auto;
+    }
+    .g-recaptcha{
+        padding: 0;
+        padding-right: 35%;
+    }
+
+}

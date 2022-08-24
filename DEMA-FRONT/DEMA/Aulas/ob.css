@@ -1,0 +1,76 @@
+
+.submenu{
+    display: flex;
+    position: relative;
+    font-family: 'Bahnschrift';
+    height: 100%;
+    width: 200px;
+    bottom: 30px;
+
+}
+.submenu .submenu2{
+    position: fixed;
+    width: 200px;
+    padding: 30px 0;
+    background: #565da0;
+}
+.submenu h5{
+    border-bottom: 1px solid;
+
+
+}
+.submenu a:hover{
+    color: #565da0;
+}
+.submenu ul{
+    display: block;
+    position: relative;
+    padding: 30px 0;
+    height: 1000px;
+    background: #e0e3ff;
+    left: 200px;
+    border-left: 5px solid rgb(106, 106, 201);
+
+}
+.submenu li{
+    padding: 20px;
+}
+.submenu li:hover{
+    background-color: #c4caff;
+}
+.submenu a{
+    text-decoration: none;
+}
+
+.video{
+    font-family: 'Bahnschrift';
+    position: absolute;
+    top: 20px;
+    width: 1200px;
+    left: 525px;
+
+}
+.epo h1{
+    border-bottom: 1px solid rgb(208, 218, 241);
+}
+.epo span{
+    font-family: 'Bahnschrift';
+    font-size: 20px;
+}
+.video a{
+    font-size: 25px;
+    position: relative;
+    display: block;
+    color: blue;
+}
+.video img{
+    width: 400px;
+    height: 320px;
+}
+.video h3{
+    padding-top: 50px;
+}
+.exerci{
+    position: initial;
+    margin-top: 40px;
+}

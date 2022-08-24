@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//db.onlinewebfonts.com/c/0a6ee448d1bd65c56f6cf256a7c6f20a?family=Bahnschrift" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="../Dema-inicio.css">
+    <link rel="stylesheet" href="../Loader/loader.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../materias.css">
+    <link rel="stylesheet" href="../sidebar.css">
+    <link rel="stylesheet" href="ob.css">
+    <link rel="stylesheet" href="opss.css">
+    <!--icons-->
+
+
+    <title>DEMA - INICIO</title>
+</head>
+
+<body>
+    <!--<div class="loader-wrapper">
+        <div class="disappear">
+            <span class="loader"><span class="loader-inner"></span></span>
+            </div>-->
+    </div>
+    <!-- Menu -->
+    <div class="menu">
+        <div class="sidebar">
+            <div class="logo" style="display: grid; padding-left: 20px;">
+                <img style="position: absolute; height: 40px;" src="../bootstrap-icons/gem.svg" alt="icon">
+                <h2>DEMA</h2>
+            </div>
+            <!--Foto de perfil -->
+            <div class="user">
+                <a href=""><img src="../Boneco-Amarelo.png" alt=""></a>
+            </div>
+            <div class="username">
+                <h5>Eduardo Rachor</h5>
+
+            </div>
+            <!-- Row  -->
+            <div class="logout" style="display:grid;">
+                <a href="" style="text-decoration: none;"><img src="../bootstrap-icons/arrow-bar-left.svg"
+                        alt="">logout</a>
+            </div>
+            <input id="search" type="text" placeholder="Não funciono..">
+            <ul>
+                <li><a id="mbtn" onclick="mat()"><img class="icons" src="../bootstrap-icons/book.svg">
+                        Materias</img></a></li>
+                <li><a href="../Dema_inicio.html"><img class="icons" src="../bootstrap-icons/clipboard.svg"> Dashboard</img></a></li>
+                <li><a href=""><img class="icons" src="../bootstrap-icons/person-fill.svg"> Comunidade</img></a></li>
+                <li><a href=""><img class="icons" src="../bootstrap-icons/github.svg">GitHub</img></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Mensagem de boas vindas -->
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Ops...</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                Infelizmente essa parte ainda não foi concluida :(
+                    Nossas sinceras desculpas!
+            </div>
+        </div>
+    </div>
+    <div id="contentid">
+
+        <div class="submenu " style="display:;">
+            <div class="submenu2">
+                <ul>
+                    <li>
+                        <div class="vidbar">
+                            <h2>Operações Básicas</h2>
+                            <h5>Matematica Básica</h4>
+                        </div>
+                    </li>
+                    <li><a href="">Bem-vindo</a></li>
+                    <li><a href="#" onclick="mat2()">Contando Números</a></li>
+                    <li><a href="#" onclick="mat2()">Exercicio</a></li>
+                    <li><a href="#popup1"onclick="ops()">Soma</a></li>
+                    <li><a href="#popup1" onclick="ops()">Exercicio</a></li>
+                    <li><a href="#popup1" onclick="ops()">Subtração</a></li>
+                    <li><a href="#popup1" onclick="ops()"> Exercicio</a></li>
+                    <li><a href="#popup1" onclick="ops()">Multiplicação</a></li>
+                    <li><a href="#popup1" onclick="ops()">Exercicio</a></li>
+                    <li><a href="#popup1" onclick="ops()">Divisão</a></li>
+                    <li><a href="#popup1" onclick="ops()">Exercicio</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="video" id="barcontent3" style="display:;">
+            <video controls>
+                <source src="../bds2.mp4" type="video/mp4">
+            </video>
+            <div class="epo">
+                <h1>Transcrição</h1>
+                <span>
+                    Bem vindos ao projeto DEMA! Seu significado é Dispostivo Educacional De Matemática Aplicada.<br>
+                    Nosso objetivo é fazer com que você possa estudar matemática de casa e de uma forma pratica sem
+                    nenhum custo.<br>
+                    Reconhecemos as dificuldades em comum e trazemos a vocês um metodo de estudo que possa fazer com que
+                    se sintam menos desmotivados quando estudarem matemática.<br>
+                    Continue vendo nossas aulas e entenda mais sobre nossa metodologia! Estarei te esperando na proxima
+                    aula!
+                </span>
+            </div>
+        </div>
+        <div class="video" id="barcontent" style="display:none;">
+            <video controls>
+                <source src="../bds2.mp4" type="video/mp4">
+            </video>
+            <div class="epo">
+                <h1>Transcrição</h1>
+                <span>
+                    Bem vindo todos a nossa aula de 
+                </span>
+            </div>
+        </div>
+        <div class="video" id="barcontent2" style="display:none;">
+            <div class="exerci">
+                <h1>Exercicios</h1>
+                <span>
+                    Baseado no video anterior, resolva as seguintes perguntas.
+                </span>
+                <h3>1. Quantos objetos há na imagem abaixo?</h1>
+                    <img src="../eximg/24609512-various-beach-objects.jpg" alt="">
+                    <a onclick="apr()">resposta</a>
+                    <span id='resp1' style="display: none; border: 1px solid;">
+                        Nessa imagem há 8 objetos: 2 chinelos, 1 chapeu, 1 bola, 1 protetor solar, 1 melancia, um balde
+                        e uma pa.
+                    </span>
+                    <h3>2. Quantos objetos aparecem a baixo?</h3>
+                    <img src="../eximg/conjunto-de-muitos-objetos_1308-26157.jpg" alt="">
+                    <a onclick="apr2()">resposta</a>
+                    <span id='resp2' style="display: none; border: 1px solid;">Nessa imagem há 15 objetos: 2 Mochilas, 2
+                        bones, 3 cadernos, 3esqueci o nome, 2 caixas de leite e 2 litroes de agua.</span>
+                    <h3>3. Quantos objetos há abaixo? </h3>
+                    <img src="../eximg/stock-vector-set-escola-fornece-ilustracao-de-objeto-grafico_77313-198.jpg" alt="">
+                    <a onclick="apr3()">resposta</a>
+                    <span id='resp3' style="display: none; border: 1px solid;">Nessa imagem há 20 objetos</span>
+            </div>
+        </div>
+
+    </div>
+    <!--Materias on click-->
+    <div id="maid"class="materias_1" style="display:none;">
+        <div id="mlist">
+            <ul>
+                <li>
+                    <span>Biblioteca da Matematica</span>
+                </li>
+            </ul>
+            <li class="all">
+                <div class="b1f">
+                    
+                        <span>Matemática Básica</span>
+                    
+                    <ul>
+                        <li><a href="Aulas/Dema_OB.html">Operações Básicas</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Numeros Decimais</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Símbolos Matemáticos</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Conjuntos Numéricos</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Potenciação</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Radiciação</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Fração Geratriz</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Produtos Notaveis</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Fatoração</a></li>
+                        <li><a href="Aulas/Dema_OB.html">MMC e MDC</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Escala</a></li>
+                        <li><a href="Aulas/Dema_OB.html">Regra de três</a></li>
+                    </ul>
+                </div>
+                <div class="gp1">
+                    
+                        <span>Geometria Plana</span>
+                    
+                    <ul>
+                        <li><a href="Aulas/Dema_GP.html">Axiomas</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Ãngulos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Teorema de Tales</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Triangulos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Quadriláteros Notáveis</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Polígnos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Semelhança de Polígnos</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Circuferência</a></li>
+                        <li><a href="Aulas/Dema_GP.html">Polignos 2</a></li>
+                    </ul>
+                </div>
+                <div class="ge1">
+                    
+                        <span>Geometria espacial</span>
+                    
+                    <ul>
+                        <li><a href="Aulas/Dema_GE.html">Distancia e Ponto Medio</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Equação da Reta</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Alinhamentos</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Posições relativas entre 2 retas</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Geometria Espacial</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Circunferencia</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Conicas</a></li>
+                        <li><a href="Aulas/Dema_GE.html">Posição Relativa Circuferência</a></li>
+                    </ul>
+                </div>
+                <div class="ga1">
+                    
+                        <span>Geometria analítica</span>
+                    
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Distância entre 2 pontos</a></li>
+                        <li><a href="Dema_workinprogress.html">Ponto Médio de um Segmento</a></li>
+                        <li><a href="Dema_workinprogress.html">Equação da reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Condição de alinhamento 3 pontos</a></li>
+                        <li><a href="Dema_workinprogress.html">Metodos obtenção da equação de uma reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Posições reltivas entre 2 retas</a></li>
+                        <li><a href="Dema_workinprogress.html">Distância entre ponto e reta</a></li>
+                        <li><a href="Dema_workinprogress.html">Distância entre 2 retas paralelas</a></li>
+                        <li><a href="Dema_workinprogress.html">Baricentro e área de um triângulo mediante coordenadas do vértices</a></li>
+                        <li><a href="Dema_workinprogress.html">Circunferencia</a></li>
+
+                    </ul>
+                </div>
+                <div class="ga1">
+                    
+                        <span>Trigonometria</span>
+                    
+                    <ul>
+                        <li><a href="Dema_workinprogress.html">Relações no Triângulo Retãngulo</a></li>
+                        <li><a href="Dema_workinprogress.html">Teoremas da Geometria Espacial</a></li>
+                        <li><a href="Dema_workinprogress.html">Posições Relativas</a></li>
+                        <li><a href="Dema_workinprogress.html">Poliedros</a></li>
+                        <li><a href="Dema_workinprogress.html">Prismas</a></li>
+                        <li><a href="Dema_workinprogress.html">Paeleleípedo</a></li>
+                        <li><a href="Dema_workinprogress.html">Cubos</a></li>
+                        <li><a href="Dema_workinprogress.html">Cones</a></li>
+                        <li><a href="Dema_workinprogress.html">Piramides</a></li>
+                        <li><a href="Dema_workinprogress.html">Cilindro</a></li>
+                        <li><a href="Dema_workinprogress.html">Troncos</a></li>
+                        <li><a href="Dema_workinprogress.html">Semelhança de Sólidos</a></li>
+                        <li><a href="Dema_workinprogress.html">Esfera</a></li>
+                        <li><a href="Dema_workinprogress.html">Projeção Ortogonal</a></li>
+                    </ul>
+                </div>
+                <div class="fun1">
+                
+                    <span>Funções e Conjuntos</span>
+                
+                <ul>
+                    <li><a href="Dema_workinprogress.html">Teoria dos conjuntos</a></li>
+                    <li><a href="Dema_workinprogress.html">Relação de elementos e conjuntos</a></li>
+                    <li><a href="Dema_workinprogress.html">Produto Cartesiano</a></li>
+                    <li><a href="Dema_workinprogress.html">Definição de Função</a></li>
+                    <li><a href="Dema_workinprogress.html">DCI</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Composta</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Inversa</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Sobrejetora</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Injetora</a></li>
+                    <li><a href="Dema_workinprogress.html">Função Bijetora</a></li>
+                    <li><a href="Dema_workinprogress.html">Função de 1º e 2º Grau</a></li>
+                    <li><a href="Dema_workinprogress.html">Funções avançadas</a></li>
+                </ul>
+            </div>
+            <div class="gp1">
+                
+                    <span>Analise Combinatoria</span>
+                
+                <ul>
+                    <li><a href="Dema_workinprogress.html">Fatorial</a></li>
+                    <li><a href="Dema_workinprogress.html">Numero Binomial</a></li>
+                    <li><a href="Dema_workinprogress.html">Triangulo de Pascal</a></li>
+                    <li><a href="Dema_workinprogress.html">Binomio de Newton</a></li>
+                    <li><a href="Dema_workinprogress.html">Principio da contagem</a></li>
+                    <li><a href="Dema_workinprogress.html">Permutação</a></li>
+                    <li><a href="Dema_workinprogress.html">Arranjo</a></li>
+                    <li><a href="Dema_workinprogress.html">Combinação</a></li>
+                    <li><a href="Dema_workinprogress.html">Espaço amostral e evento</a></li>
+                    <li><a href="Dema_workinprogress.html">Definição de Probabilidade</a></li>
+                    <li><a href="Dema_workinprogress.html">Eventos</a></li>
+                    <li><a href="Dema_workinprogress.html">Eventos Independentes</a></li>
+                </ul>
+            </div>
+            </li>
+            
+
+
+        </div>
+        </li>
+
+
+
+    </div>
+    </div>
+
+
+
+</body>
+<!-- Script de Load -->
+<script>
+    var loader = document.querySelector(".loader-wrapper"); window.addEventListener("load", vanish); function vanish() { loader.classList.add("disappear"); }
+</script>
+<script src="../test.js"></script>
+<script>
+    function mat2() {
+        var x = document.getElementById("barcontent");
+        var y = document.getElementById("barcontent2");
+        var z = document.getElementById("barcontent3");
+        z.style.display="none"
+        if (x.style.display === "none") {
+            x.style.display = "";
+            y.style.display = "none";
+        } else {
+            x.style.display = "none";
+            y.style.display = "";
+        }
+    }
+    function ops() {
+        var x = document.getElementById("barcontent");
+        var y = document.getElementById("barcontent2");
+        var z = document.getElementById("barcontent3");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
+    }
+
+</script>

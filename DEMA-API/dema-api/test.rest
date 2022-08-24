@@ -1,0 +1,7 @@
+@host = localhost:3000
+
+// Access a Secured API Endpoint
+GET http://{{host}}/dashboard HTTP/1.1
+content-type: application/json
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJlbWFpbCI6ImVkZXIiLCJleHAiOjE2NjAzMjc0MDN9.xMKUxUOXKiEswAX258q88lajrtcLLny8TDun2YCY5CI
+###
